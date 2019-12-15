@@ -14,7 +14,7 @@ mongoose
     useFindAndModify: false,
     useUnifiedTopology: true
   })
-  .then(con => console.log('DB connection successful'));
+  .then(() => console.log('DB connection successful'));
 
 // const testTour = new Tour({
 //   name: 'The Park Camper',
