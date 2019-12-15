@@ -1,11 +1,12 @@
 const fs = require('fs');
-const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const mongoose = require('mongoose');
 
 dotenv.config({ path: '../../config.env' });
-const Tour = require('../../models/tourModel');
 
 const DB = process.env.DB.replace('<PASSWORD>', process.env.DB_PASSWORD);
+
+const Tour = require('../../models/tourModel');
 
 mongoose
   .connect(DB, {
@@ -14,7 +15,7 @@ mongoose
     useFindAndModify: false,
     useUnifiedTopology: true
   })
-  .then(con => console.log('DB connection successful'));
+  .then(() => console.log('DB connection successful'));
 
 //Read JSON file
 
@@ -44,7 +45,7 @@ const deleteData = async () => {
   process.exit();
 };
 
-if (process.argv[2] === 'import') {
+if (process.argv[2] === '--import') {
   importData();
 } else if (process.argv[2] === '--delete') {
   deleteData();
