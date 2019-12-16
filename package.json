@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "12.11.1"
+    "node": "12.13.1"
   },
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "start:prod": "SET NODE_ENV=production & nodemon server.js"
   },
   "author": "Chi Josh",
