@@ -20,6 +20,6 @@ yarn-error.log
 
 #keys
 .env
-config.env
+# config.env
 
 
