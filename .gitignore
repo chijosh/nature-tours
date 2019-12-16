@@ -17,9 +17,9 @@ database/
 npm-debug.log
 yarn-debug.log
 yarn-error.log
+
+#keys
 .env
 config.env
 
 
-#keys
-# config.js
