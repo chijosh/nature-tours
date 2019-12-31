@@ -7,8 +7,5 @@
   },
   "runOnChangeOnly": false,
   "watch": ["src/**/*.js", "src/**/*.gql", "views/**/*.pug"],
-  "env": {
-    "NODE_ENV": "development"
-  },
   "ext": "js,json,graphql"
 }

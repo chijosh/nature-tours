@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 dotenv.config({ path: '../../config.env' });
 
-const DB = process.env.DB.replace('<PASSWORD>', process.env.DB_PASSWORD);
+const DB = process.env.DB.replace('<PASSWORD>', process.env.PASSWORD);
 
 const Tour = require('../../models/tourModel');
 
