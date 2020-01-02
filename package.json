@@ -2,18 +2,19 @@
   "name": "nature-tours",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "engines": {
     "node": "12.13.1"
   },
   "scripts": {
-    "start": "node server.js",
-    "start:prod": "SET NODE_ENV=production & node server.js",
+    "start": "nodemon server.js",
+    "start:prod": "SET NODE_ENV=production & nodemon server.js",
     "debug": "ndb server.js"
   },
   "author": "Chi Josh",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.8.0",
