@@ -20,6 +20,9 @@ yarn-error.log
 
 #keys
 .env
-# config.env
+config.env
+
+#nodemon
+nodemon.json
 
 
