@@ -6,6 +6,13 @@
     "js": "node"
   },
   "runOnChangeOnly": false,
-  "watch": ["src/**/*.js", "src/**/*.gql", "views/**/*.pug"],
+  "watch": [
+    "controllers/*.js",
+    "models/*.js",
+    "routes/*.js",
+    "utils/*.js",
+    "views/**/*.pug"
+  ],
+
   "ext": "js,json,graphql"
 }
