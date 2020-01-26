@@ -25,4 +25,7 @@ config.env
 #nodemon
 nodemon.json
 
+#cache
+.cache
+
 
