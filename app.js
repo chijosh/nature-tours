@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === 'development') {
 const limiter = rateLimit({
   max: 100,
   winderMs: 60 * 60 * 1000,
-  message: 'Too many requests from this IP, please try again in an hour!'
+  message: 'Too many requests from this IP, please try again in an hour!',
 });
 console.log('Running: ', process.env.NODE_ENV);
 
@@ -63,8 +63,8 @@ app.use(
       'difficulty',
       'price',
       'ratingsAverage',
-      'maxGroupSize'
-    ]
+      'maxGroupSize',
+    ],
   })
 );
 
